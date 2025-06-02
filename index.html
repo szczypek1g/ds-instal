@@ -27,16 +27,24 @@
       text-align: center;
       gap: 1rem;
     }
-    header img {
-      width: 120px;
+    .logo-title-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .logo-title-container img {
+      width: 100px;
       transition: transform 0.3s;
     }
-    header img:hover {
+    .logo-title-container img:hover {
       transform: scale(1.1) rotate(-2deg);
     }
-    header h1 {
+    .logo-title-container h1 {
       font-size: 3rem;
       color: #fff;
+      margin: 0;
     }
     header p {
       font-style: italic;
@@ -144,8 +152,10 @@
 <body>
 
 <header>
-  <img src="dsinstal2.png" alt="Logo DS Instal">
-  <h1>DS Instal</h1>
+  <div class="logo-title-container">
+    <img src="dsinstal2.png" alt="Logo DS Instal">
+    <h1>DS Instal</h1>
+  </div>
   <p>Fachowa instalacja – bez iskry nie ruszy!</p>
 </header>
 
